@@ -75,17 +75,10 @@ class _HomePageState extends State<HomePage> {
           },
           child: Icon(Icons.add),
         ),
-        body: ListView.separated(
-          separatorBuilder: (context, index) => Divider(
-          color: Colors.black26),
-          itemCount: 10,
-          itemBuilder: (context,index) {
-            return buildListFavorite();
-          },
-        ),
+        
       );
    }
-  buildListFavorite(){
+  buildListRoom(){
     return GestureDetector(
       onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => PointPage()));},
       child:Container(  
@@ -96,4 +89,11 @@ class _HomePageState extends State<HomePage> {
       ),
     ); 
   } 
+}
+
+
+void upRoom()async{
+  await FirebaseDatabase.instance.reference().child("rooms").push()
+  .set({"nome":""+_nomeSala.text,
+        "descrição":""+_descri.text});
 }

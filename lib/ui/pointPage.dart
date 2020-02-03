@@ -26,25 +26,6 @@ class _PointPage extends State<PointPage> {
             )
           ],
         ),
-        body: GridView.count(
-          crossAxisCount: 4,
-          scrollDirection: Axis.vertical,
-          children: List.generate(100, (index) {
-            return Center(
-              child: GestureDetector(
-                onTap: (){},
-                onLongPress: (){},
-                child:Container(
-                  decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey, width: 3.0),
-                  ),
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text('Item $index',style: Theme.of(context).textTheme.headline,),
-                ),
-              ),
-            );
-          }),
-        ),
       );
   }
 }
