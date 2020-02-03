@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ubireudo/ui/pointPage.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -9,8 +10,12 @@ class HomePage extends StatefulWidget {
 
 final String turma = 'Arquitetura de Computadores';
 final String complemento = '2020.1 - S3';
+final _nomeSala = TextEditingController();
+final _descri = TextEditingController();
+
 
 class _HomePageState extends State<HomePage> {
+  
   @override
    Widget build(BuildContext context){
       return Scaffold(
@@ -33,12 +38,13 @@ class _HomePageState extends State<HomePage> {
             content: Column(
               children: <Widget>[
                 TextField(
+                  controller: _nomeSala,
                   decoration: InputDecoration(
                     labelText: 'Nome da Turma',
                   ),
                 ),
                 TextField(
-                  obscureText: true,
+                  controller: _descri,
                   decoration: InputDecoration(
                     labelText: 'Descrição',
                   ),

@@ -31,18 +31,19 @@ class _PointPage extends State<PointPage> {
           scrollDirection: Axis.vertical,
           children: List.generate(100, (index) {
             return Center(
-              child: Container(
-                decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey, width: 3.0),
-                 ),
-              padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  'Item $index',
-                  style: Theme.of(context).textTheme.headline,
+              child: GestureDetector(
+                onTap: (){},
+                onLongPress: (){},
+                child:Container(
+                  decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 3.0),
+                  ),
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text('Item $index',style: Theme.of(context).textTheme.headline,),
                 ),
               ),
             );
-          }),  
+          }),
         ),
       );
   }

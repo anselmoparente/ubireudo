@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "419030368719",
+    "firebase_url": "https://ubireudo.firebaseio.com",
+    "project_id": "ubireudo",
+    "storage_bucket": "ubireudo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419030368719:android:95ec5948048bc0e76d92ba",
+        "android_client_info": {
+          "package_name": "com.example.ubireudo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419030368719-691d7ag3knjbt5qcovudgog5i55pjcoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXWMvogXzmJt0L4pJ-Mb-L3F6kU6AFTGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419030368719-691d7ag3knjbt5qcovudgog5i55pjcoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
